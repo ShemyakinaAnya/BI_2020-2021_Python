@@ -1,5 +1,5 @@
 # Greetings, instructions
-print('Greetings, this is Calculator. It can add, subtract, multiply and divide.')
+print('Greetings, this is Calculator. It can add (+), subtract(-), multiply(*) and divide(/).')
 
 # Data input + operands' verification
 input1 = input('Enter your first operand: ')
@@ -19,10 +19,13 @@ if str.isdigit(input1):
             elif command == '*':
                 print(operand1 * operand2)
             elif command == '/':
-                if operand1 % operand2 == 0:
-                    print(round(operand1 / operand2))
+                if operand2 != 0:
+                    if operand1 % operand2 == 0:
+                        print(round(operand1 / operand2))
+                    else:
+                        print(round((operand1 / operand2), 3))
                 else:
-                    print(round((operand1 / operand2), 3))
+                    print('Division by zero is NOT allowed!')
             else:
                 print('Your operator is invalid or is not feasible for this Calculator')
     else:
