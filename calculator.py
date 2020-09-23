@@ -29,6 +29,6 @@ if str.isdigit(input1):
             else:
                 print('Your operator is invalid or is not feasible for this Calculator')
     else:
-        print('Your second operand is invalid. Please enter a number.')
+        print('Your second operand is invalid. Please enter a number')
 else:
-    print('Your first operand is invalid. Please enter a number.')
+    print('Your first operand is invalid. Please enter a number')
