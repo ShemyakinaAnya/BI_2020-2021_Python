@@ -34,12 +34,12 @@ if str.isdigit(original_amount):
         if to_unit in are_units_there:
 
             # Calculations
-            rus_result = rus_convert(float(original_amount), str(from_unit), str(to_unit))
-            metric_result = metric_convert(float(rus_result), str(to_unit))
+            rus_result = rus_convert(float(original_amount), from_unit, to_unit)
+            metric_result = metric_convert(float(rus_result), to_unit)
 
             # Result output
-            print('Your answer is', round(float(rus_result), 3), str(to_unit))
-            print('which is the same as', round(metric_result, 3), 'metres')
+            print('Your answer is', round(float(rus_result), 2), to_unit)
+            print('which is the same as', round(metric_result, 2), 'metres')
         else:
             print('Unfortunately there is no such unit this converter knows of. Please choose one from the intro')
     else:

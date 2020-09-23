@@ -1,1 +1,2 @@
 simple calculator
+rus converter
