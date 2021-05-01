@@ -21,5 +21,6 @@ class TestDna(unittest.TestCase):
     def test_transcribe(self):
         self.assertEqual(self.Dna.transcribe().seq, "CAGGACUGUAGGCU")
 
+
 if __name__ == '__main__':
     unittest.main()

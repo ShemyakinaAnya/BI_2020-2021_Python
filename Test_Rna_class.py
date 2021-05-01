@@ -18,5 +18,6 @@ class TestRna(unittest.TestCase):
     def test_reverse_complement(self):
         self.assertEqual(self.Rna.reverse_complement(), "AGCCUACAGUCCUG")
 
+
 if __name__ == '__main__':
     unittest.main()
